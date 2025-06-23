@@ -18,6 +18,7 @@ This project includes both a **Graphical Interface (GUI)** and a **Command Line 
 | Show/Hide Toggle         | ✅                                  | ❌                                   |
 | Strength Meter           | ✅ (based on length)                | ✅ (prints label)                    |
 | Interactive UI           | ✅ (Tkinter-based)                  | ❌                                   |
+| Generate with only length            | ✅ Yes (fallback defaults)                                  | ❌ No (needs char types)                                   |
 
 ---
 
