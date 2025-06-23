@@ -2,6 +2,18 @@ import string
 import random
 import pyperclip
 
+def get_strength_label(length):
+    if length <= 4:
+        return "🔴 Very Weak"
+    elif length <= 7:
+        return "🟠 Weak"
+    elif length <= 10:
+        return "🟡 Moderate"
+    elif length <= 13:
+        return "🟢 Strong"
+    else:
+        return "✅ Very Strong"
+
 def generate_password(length, use_digits=True, use_lower=True, use_upper=True, use_symbols=True):
     char_pool = ''
     if use_digits:
@@ -33,7 +45,7 @@ def generate_password(length, use_digits=True, use_lower=True, use_upper=True, u
     random.shuffle(password)
     return ''.join(password)
 
-# --- CLI Interaction ---
+# CLI Interaction
 print("🔐 Password Generator Tool 🔐")
 length = int(input("Enter password length: "))
 use_digits = input("Include digits? (y/n): ").lower() == 'y'
@@ -42,9 +54,11 @@ use_upper = input("Include uppercase letters? (y/n): ").lower() == 'y'
 use_symbols = input("Include special characters? (y/n): ").lower() == 'y'
 
 result = generate_password(length, use_digits, use_lower, use_upper, use_symbols)
+strength = get_strength_label(length)
 print(f"\n✅ Generated Password:\n{result}")
+print(f"🔐 Strength: {strength}")
 
-# --- Save to File ---
+# Save to File
 save_file = input("\n💾 Save password to file? (y/n): ").lower() == 'y'
 if save_file:
     filename = input("Enter filename (e.g., mypass.txt): ")
@@ -55,7 +69,7 @@ if save_file:
     except Exception as e:
         print("❌ Error saving file:", e)
 
-# --- Copy to Clipboard ---
+# Copy to Clipboard
 copy_clip = input("\n📋 Copy password to clipboard? (y/n): ").lower() == 'y'
 if copy_clip:
     try:
