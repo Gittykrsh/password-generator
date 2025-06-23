@@ -57,7 +57,7 @@ python password_generator.py
 - Option to save to a `.txt` file.
 
 ```bash
-python pass_cli.py
+python pass.py
 ```
 
 ---
