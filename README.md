@@ -43,7 +43,7 @@ Strength is based **only on password length**:
 - Save password to a file.
 - Strength bar with color and label.
 
-
+![GUI](https://github.com/user-attachments/assets/c99b0421-8557-4485-bcdc-fe362f40ce12)
 
 ---
 
@@ -54,7 +54,7 @@ Strength is based **only on password length**:
 - Generates a strong password and shows strength.
 - Option to save to a `.txt` file.
 
-
+![CLI](https://github.com/user-attachments/assets/2a3f0826-ad9d-4a46-8e28-08a3b50d2c24)
 
 ---
 
