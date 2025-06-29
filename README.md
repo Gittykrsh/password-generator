@@ -43,9 +43,7 @@ Strength is based **only on password length**:
 - Save password to a file.
 - Strength bar with color and label.
 
-```bash
-python password_generator.py
-```
+
 
 ---
 
@@ -56,9 +54,7 @@ python password_generator.py
 - Generates a strong password and shows strength.
 - Option to save to a `.txt` file.
 
-```bash
-python pass.py
-```
+
 
 ---
 
