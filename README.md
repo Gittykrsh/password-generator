@@ -6,7 +6,7 @@ This project includes both a **Graphical Interface (GUI)** and a **Command Line 
 
 ## 🚀 Features Comparison
 
-| Feature                  | GUI Version ✅                      | CLI Version ✅                       |
+| Feature                  | GUI Version                       | CLI Version                        |
 |--------------------------|------------------------------------|-------------------------------------|
 | Adjustable Length        | ✅                                  | ✅                                   |
 | Include Digits           | ✅                                  | ✅                                   |
